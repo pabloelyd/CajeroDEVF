@@ -4,9 +4,33 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
     <title>Cajero DEV.F</title>
 </head>
 <body>
-    
+        <main class="container d-flex align-items-center">
+            <form id = "form" class="col-6 col-md-5 col-lg-4 mx-auto was-validated p-5" id="loginForm">
+                    <div class="form-group" >
+                        <h5 class="text-center">Bienvenid@</h5>
+                        <div class="invalid-feedback" id="accessDenied">
+                            Usuario y/o contraseña equivocada, intente de nuevo
+                          </div>
+                          <label for="usuario">Usuario:</label>
+                          <input type="text" class="form-control text-center" placeholder="User" id="inputUser"  required>
+                          <div class="invalid-feedback">
+                            Favor de ingresar usuario
+                          </div>
+                          <label for="contraseña">Contraseña:</label>
+                          <input type="password" class="form-control text-center my-2" placeholder="Password" id="inputPass" required>
+                          <div class="invalid-feedback">
+                            Favor de ingresar contraseña
+                          </div>
+                          <button type="submit" class=" btn btn-success text-center" id="login" style="width: 100%" >Login</button>
+                    </div>
+            </form>
+        </main>
+    <script src="app2.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

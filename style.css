@@ -1,0 +1,17 @@
+
+
+main{
+    height: 100vh;
+}
+
+.is-invalid{
+    color: red;
+}
+
+form, #pantallaPrincipal, #bggrey {
+    background-color: #efefef;
+}
+
+.hidden{
+    display: none;
+}
